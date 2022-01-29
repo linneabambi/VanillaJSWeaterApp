@@ -15,27 +15,38 @@
   </head>
   <body>
     <div class="container">
-      <div class="weatherApp">
-        <h1>New York</h1>
-        <ul>
-          <li>Friday 07:15</li>
-          <li>Clear</li>
-        </ul>
-        <div class="row">
-          <div class="col-6">
-            <img
-              src="weatherimage/Weather_Isometric.png"
-              alt="weather forecast picture"
-            />
-            <span id="degrees">14</span><span id="celcius"><a>°C </a></span> |
-            <span id="farenheit"><a>°F</a></span>
-          </div>
-          <div class="col-6">
+      <div class="weather-wrapper">
+        <div class="weatherApp">
+          <div class="top-off-page">
+            <h1>New York</h1>
             <ul>
-              <li>Precipitation: <span id="rain">0</span>%</li>
-              <li>Humidity:<span id="humidity">77</span>%</li>
-              <li>Wind:<span id="wind">2</span>km/h</li>
+              <li>Friday 07:15</li>
+              <li>Clear</li>
             </ul>
+          </div>
+          <div class="row">
+            <div class="col-6">
+              <div class="clearfix>" class="left">
+                <img
+                  src="weatherimage/Weather_Isometric.png"
+                  alt="weather forecast picture"
+                  class="float-left"
+                />
+                <div class="degrees-container">
+                  <span id="degrees"> <strong>14</strong></span>
+                  <span class="celcius-farenheit-span">
+                    <span class="units">°C | °F </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <ul>
+                <li>Precipitation: <span id="rain">0</span>%</li>
+                <li>Humidity:<span id="humidity">77</span>%</li>
+                <li>Wind:<span id="wind">2</span>km/h</li>
+              </ul>
+            </div>
           </div>
         </div>
         <small
