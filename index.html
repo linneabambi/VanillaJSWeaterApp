@@ -15,35 +15,37 @@
   </head>
   <body>
     <div class="container">
-      <h1>New York</h1>
-      <ul>
-        <li>Friday 07:15</li>
-        <li>Clear</li>
-      </ul>
-      <div class="row">
-        <div class="col-6">
-          <img
-            src="weatherimage/Weather_Isometric.png"
-            alt="weather forecast picture"
-          />
-          <span id="degrees">14</span><span id="celcius"><a>°C </a></span> |
-          <span id="farenheit"><a>°F</a></span>
+      <div class="weatherApp">
+        <h1>New York</h1>
+        <ul>
+          <li>Friday 07:15</li>
+          <li>Clear</li>
+        </ul>
+        <div class="row">
+          <div class="col-6">
+            <img
+              src="weatherimage/Weather_Isometric.png"
+              alt="weather forecast picture"
+            />
+            <span id="degrees">14</span><span id="celcius"><a>°C </a></span> |
+            <span id="farenheit"><a>°F</a></span>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Precipitation: <span id="rain">0</span>%</li>
+              <li>Humidity:<span id="humidity">77</span>%</li>
+              <li>Wind:<span id="wind">2</span>km/h</li>
+            </ul>
+          </div>
         </div>
-        <div class="col-6">
-          <ul>
-            <li>Precipitation: <span id="rain">0</span>%</li>
-            <li>Humidity:<span id="humidity">77</span>%</li>
-            <li>Wind:<span id="wind">2</span>km/h</li>
-          </ul>
-        </div>
+        <small
+          ><a
+            href="https://github.com/linneabambi/VanillaJSWeaterApp"
+            target="_blank"
+            >Open-source code, by Linnéa Malmberg</a
+          ></small
+        >
       </div>
-      <small
-        ><a
-          href="https://github.com/linneabambi/VanillaJSWeaterApp"
-          target="_blank"
-          >Open-source code, by Linnéa Malmberg</a
-        ></small
-      >
     </div>
     <script src="src/script.js"></script>
   </body>
