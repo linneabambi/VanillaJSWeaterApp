@@ -1,6 +1,30 @@
 li {
   list-style: none;
+  font-family: sans-serif;
+  font-weight: 14px;
+  color: #75757a;
+  margin: 0;
+  padding: 0;
+  line-height: 18px;
 }
 img {
   width: 100px;
+}
+.weatherApp {
+  max-width: 600px;
+  border: 1px solid #d9d9d9;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+h1 {
+  font-family: monospace;
+  color: #75757a;
+  font-size: 30px;
+  margin-bottom: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
 }
