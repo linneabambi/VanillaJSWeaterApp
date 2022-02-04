@@ -26,7 +26,7 @@ function showTemperature(response) {
   cityElement = document.querySelector("#current-city");
   let temperature = Math.round(response.data.main.temp);
   degreesElement.innerHTML = temperature;
-  console.log(degreesElement);
+
   cityElement = response.data.name;
   let description = document.querySelector("#sky");
   description.innerHTML = response.data.weather[0].description;
