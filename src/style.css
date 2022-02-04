@@ -6,6 +6,8 @@ li {
   margin: 0;
   padding: 0;
   line-height: 18px;
+}
+li::first-letter {
   text-transform: capitalize;
 }
 img {
