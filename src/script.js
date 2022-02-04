@@ -23,11 +23,11 @@ function newDate(timestamp) {
 }
 function showTemperature(response) {
   let degreesElement = document.querySelector("#degrees");
-  cityElement = document.querySelector("#current-city");
+  let cityElement = document.querySelector("#current-city");
   let temperature = Math.round(response.data.main.temp);
   degreesElement.innerHTML = temperature;
 
-  cityElement = response.data.name;
+  cityElement.innerHTML = response.data.name;
   let description = document.querySelector("#sky");
   description.innerHTML = response.data.weather[0].description;
   let humidity = document.querySelector("#humidity");
