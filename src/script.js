@@ -21,13 +21,14 @@ function newDate(timestamp) {
   }
   return `${day} ${hour}:${minutes}`;
 }
-function displayPrediction() {
+function displayPrediction(response) {
   let predictionElement = document.querySelector("#weather-prediction");
   let predictionHTML = `<div class="row">`;
-  let days=["Sun","Mon","Tue"];
-  days.forEach(function(day){ predictionHTML =
-    predictionHTML +
-    `  
+  let days = ["Sun", "Mon", "Tue"];
+  days.forEach(function (day) {
+    predictionHTML =
+      predictionHTML +
+      `  
               <div class="col-2">
                 <div class="prediction-day">${day}</div>
 
@@ -43,12 +44,16 @@ function displayPrediction() {
                 </div>
               </div>
             `;
+  });
 
-  }
-  
   predictionHTML = predictionHTML + `</div>`;
-   predictionElement.innerHTML = predictionHTML;
-  
+  predictionElement.innerHTML = predictionHTML;
+}
+function getPrediction(coord) {
+  let apiKey = "cfecd485617989b8f0add91581222571";
+  apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coord.lat}&lon=${coord.lon}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(displayPrediction);
 }
 function showTemperature(response) {
   let degreesElement = document.querySelector("#degrees");
@@ -72,7 +77,8 @@ function showTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
-  displayPrediction();
+
+  getPrediction(response.data.coord);
 }
 function search(city) {
   let apiKey = "cfecd485617989b8f0add91581222571";
