@@ -106,28 +106,9 @@ function searchSubmit(event) {
   let searchInput = document.querySelector("#search-input");
   search(searchInput.value);
 }
-function displayFarenheit(event) {
-  event.preventDefault();
-  let farenheitTemp = (celciusTemp * 9) / 5 + 32;
-  let temp = document.querySelector("#degrees");
-  temp.innerHTML = Math.round(farenheitTemp);
-  cLink.classList.remove("active");
-  fLink.classList.add("active");
-}
-function displayCelcius(event) {
-  event.preventDefault();
-  let temp = document.querySelector("#degrees");
-  temp.innerHTML = celciusTemp;
-  cLink.classList.add("active");
-  fLink.classList.remove("active");
-}
-let celciusTemp = null;
+
 let form = document.querySelector("#search-form");
 
 form.addEventListener("submit", searchSubmit);
-let fLink = document.querySelector("#farenheit-link");
-fLink.addEventListener("click", displayFarenheit);
-let cLink = document.querySelector("#celcius-link");
-cLink.addEventListener("click", displayCelcius);
 
 search("New York");
