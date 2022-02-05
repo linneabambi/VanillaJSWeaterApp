@@ -32,6 +32,7 @@
               </div>
               <div class="col-3">
                 <input
+                  id="btn"
                   type="submit"
                   value="Search"
                   class="btn btn-primary w-100"
@@ -65,11 +66,17 @@
             </div>
             <div class="col-6">
               <ul>
-                <li>Humidity:<span id="humidity"></span>%</li>
-                <li>Wind:<span id="wind">2</span>km/h</li>
+                <li>
+                  Humidity:<span id="humidity"></span
+                  ><span class="extra">%</span>
+                </li>
+                <li>
+                  Wind:<span id="wind">2</span><span class="extra">km/h</span>
+                </li>
               </ul>
             </div>
           </div>
+          <hr />
           <div class="weather-prediction" id="weather-prediction"></div>
         </div>
         <small

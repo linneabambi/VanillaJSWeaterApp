@@ -63,6 +63,7 @@ ul {
 .prediction-day {
   font-size: 15px;
   color: #75757a;
+  text-align: center;
 }
 .temp-prediction {
   font-size: 12px;
@@ -74,6 +75,35 @@ ul {
 }
 .temp-min {
   color: #75757a;
+  text-align: center;
 }
 .temp-max {
+  text-align: center;
+}
+#btn {
+  opacity: 0.6;
+  transition: all ease-in-out 200ms;
+}
+#btn:hover {
+  opacity: 1;
+}
+#search-input {
+  color: #ec6e4c;
+  opacity: 0.6;
+  font-family: monospace;
+}
+#day-time {
+  opacity: 0.6;
+}
+#humidity,
+#wind,
+.extra {
+  opacity: 0.7;
+}
+#degrees {
+  opacity: 0.7;
+}
+.weatherApp {
+  background: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+  border-radius: 4px;
 }
