@@ -18,6 +18,27 @@
     <div class="container">
       <div class="weather-wrapper">
         <div class="weatherApp">
+          <form id="search-form" class="mb-3">
+            <div class="row">
+              <div class="col-9">
+                <input
+                  id="search-input"
+                  type="search"
+                  placeholder="Enter your City..."
+                  autofocus="on"
+                  aoutocomplete="off"
+                  class="form-control"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+            </div>
+          </form>
           <div class="top-off-page">
             <h1 id="current-city"></h1>
             <ul>
@@ -27,7 +48,7 @@
           </div>
           <div class="row">
             <div class="col-6">
-              <div class="clearfix>" class="left">
+              <div class="clearfix>" class="outerDeg" class="left">
                 <img
                   id="icon"
                   src="http://openweathermap.org/img/wn/04d@2x.png"
@@ -37,7 +58,14 @@
                 <div class="degrees-container">
                   <span> <strong id="degrees">14</strong></span>
                   <span class="celcius-farenheit-span">
-                    <span class="units">°C |<a href="#"> °F </a> </span>
+                    <span class="units"
+                      ><a id="celcius-link" class="active" href="#">°C </a>|<a
+                        id="farenheit-link"
+                        href="#"
+                      >
+                        °F
+                      </a>
+                    </span>
                   </span>
                 </div>
               </div>
