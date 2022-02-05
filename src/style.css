@@ -62,3 +62,25 @@ ul {
 .active:hover {
   color: black;
 }
+.weather-prediction {
+  margin-top: 20px;
+  text-align: center;
+  line-height: 3px;
+}
+.prediction-day {
+  font-size: 15px;
+  color: #75757a;
+}
+.temp-prediction {
+  font-size: 12px;
+}
+#prediction-img {
+  width: 60px;
+  display: block;
+  margin: 0 auto;
+}
+.temp-min {
+  color: #75757a;
+}
+.temp-max {
+}
