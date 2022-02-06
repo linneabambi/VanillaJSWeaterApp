@@ -10,7 +10,7 @@ li {
 li::first-letter {
   text-transform: capitalize;
 }
-img {
+#icon {
   width: 85px;
   padding-top: -5px;
   float: left;
